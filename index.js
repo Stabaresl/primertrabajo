@@ -5,8 +5,8 @@ app.use(cors({
     "origin": "*"
 }))
 const port = 3000;
-app.get('/api/v1/welcome', (req, res) => {
-    res.send('mi primer intento jenkins');
+app.get('/', (req, res) => {
+    res.send('mi primer intento jenkins si señor');
 });
 app.listen(port, () => {
     console.log('Server is running on: http://localhost:${port}');
